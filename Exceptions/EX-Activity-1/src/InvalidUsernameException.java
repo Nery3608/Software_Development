@@ -3,6 +3,17 @@
 //  That means code that might throw this must either catch it or declare it with "throws".
 public class InvalidUsernameException extends Exception {
 
+    public InvalidUsernameException() {
+        super("Invalid Username, please try again in case of user error.");
+
+
+    }
+
+    public InvalidUsernameException(String message) {
+        super(message);
+    }
+
+
     // TODO: Define constructors for this exception, similar to your other custom exception classes.
     //  - Create a no-argument constructor that supplies a default username-related error
     //    message to the Exception superclass using super(...).
