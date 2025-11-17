@@ -7,6 +7,9 @@ public class InterfacesDemo1 {
         for (Shape s : shapes) {
             System.out.print(s);
         }
+
+        double totalShapeArea = Shape.sumArea(shapes);
+        System.out.println("Total area of a shape: " + totalShapeArea);
     }
 }
 
